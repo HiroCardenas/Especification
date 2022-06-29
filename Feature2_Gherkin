@@ -1,0 +1,12 @@
+Feature:La opcion de visualizar las rutas más peligrosas usando la IA
+	Como usuario de SSMap quiero visualizar las rutas en donde hubo mayores 
+    actividades ilícitas para evitar los lugares más peligrosos
+Scenario: Visualización de las rutas más peligrosas usando la IA
+	
+    Dado que el usuario se encuentra en la opción de "<map_visualization>"  
+    Y escribe "<new_route>" con mayor actividad delincuencial
+	Cuando le da al botón de buscar "<most_dangerous_route>”
+	Entonces la aplicación mostrará mediante un "<Heatmap>" las rutas en donde se haya registrado la mayor cantidad de actividades ilegítimas.
+Ejemplos:
+	|map_visualization| new route| most_dangerous_route |Heatmap
+	|Mapa de SSMap, Ruta seleccionada, Ruta más peligrosa encontrada, Mapa de calor de las rutas peligrosas:XXXXXXX
