@@ -1,0 +1,11 @@
+Feature:Registro de rutas personalizadas
+	Como usuario de SS MAP quiero realizar mis propias rutas hacia un destino para 
+    tener múltiples rutas de apoyo en caso de que una de ellas no sea posible tomarla.
+Scenario:Usuario desea realizar sus propias rutas.
+	Dado que el "<new user>" se encuentra en el apartado de "<my_safe_routes>"
+	Cuando le da al botón "<new_routes>"
+	Entonces  aparecerá un "<TableBox>" donde el "<new_user>" puede interactuar con el mapa para seleccionar su "<most_adaptable_route>"de acuerdo al
+    "<location>"que se desea dirigir.
+Ejemplos_
+|new_user|my_safe_routes|new_routes|TableBox|new_user|most_adaptable_route
+|Pablo Rojas, Mis rutas seguras,Nueva rutaXXXXX, Ruta más adaptableXXXXXX, UbicacionXXXXXXXXX
