@@ -1,0 +1,11 @@
+Feature: Sincronización de la ubicación del usuario
+	Como estudiante de SSMap quiero sincronizar mi ubicación 
+    actual para obtener información de algún incidente cerca.
+Scenario: Usuario sincroniza su ubicación actual.
+	Dado que el "<new_user>" se encuentra en el menú principal 
+    Y activa el switch  "<Location_on>"
+	Cuando le da al botón de "<Accept>"
+	Entonces la aplicación mostrará "<Box>" de un mensaje “Se ha activado la ubicación de tu teléfono”
+Ejemplos:
+|new_user|Location_on|Accept|Box
+|David Alejandro, Ubicación actual encendida, Aceptar
