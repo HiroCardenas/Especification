@@ -1,0 +1,11 @@
+Feature: Privacidad de la información del usuario
+	Como usuario de SS Map quiero que la app sea de suma confianza al brindarle mis 
+    datos personales(como mi ubicación y dirección) para usar la aplicación sin ninguna preocupación.
+Scenario: Usuario quiere colocar sus datos correspondientes sin preocupaciones.
+	Dado que el "<new_user>" desea utilizar la app sin temor a que puedan acceder a su "<user_information>" 
+    Y visualice el apartado de "<user_privacy>"
+	Cuando realice el registro correspondiente los datos serán totalmente privados dentro de la aplicación.
+	Entonces no tendrá ningún problema en que se pueda filtrar los datos personales del "<new_user>" que será visualizada en un "<TableBox>".
+Ejemplos:
+	|new_user| user_information| user_privacy|TableBox
+    |UserXXXXX,AgeXX, DNIXXXXXXXX,GenreX,AddressXXXXXXXX,EmailXXXXXXXX,PasswwordXXXXX
